@@ -1,0 +1,141 @@
+body{
+    background-color: #F9F9F9 !important;
+}
+
+.be-top-header{
+    background-color: #4f5c7a !important;
+    border-bottom: 0 !important;
+}
+
+.be-fixed-sidebar .be-left-sidebar{
+    background-color: #4f5c7a !important;
+}
+
+.row1{
+    background-color: #3D88D6 !important;
+    color: #F9F9F9;
+    border: solid 0 !important;
+    border-radius: 5px !important;
+}
+.row1.grow {
+    transition: all .6s ease-in-out;
+}
+.row1:hover {
+    transform: scale(1.1);
+}
+
+.row2{
+    background-color: #3D88D6 !important;
+    color: #F9F9F9;
+    border: solid 0 !important;
+    border-radius: 5px !important;
+}
+.row2.grow {
+    transition: all .6s ease-in-out;
+}
+.row2:hover {
+    transform: scale(1.1);
+}
+
+
+.row3{
+    background-color: #3D88D6 !important;
+    color: #F9F9F9;
+    border: solid 0 !important;
+    border-radius: 5px !important;
+}
+.row3.grow {
+    transition: all .6s ease-in-out;
+}
+.row3:hover {
+    transform: scale(1.1);
+}
+
+.row4{
+    background-color: #3D88D6 !important;
+    color: #F9F9F9;
+    border: solid 0 !important;
+    border-radius: 5px !important;
+}
+.row4.grow {
+    transition: all .6s ease-in-out;
+}
+.row4:hover {
+    transform: scale(1.1);
+}
+.widget.widget-tile .data-info .desc{
+    font-size: 10px !important;
+    text-align: left !important;
+}
+.widget.widget-tile .data-info .value{
+    font-size: 30px;
+    font-weight: bold !important;
+    text-align: left;
+}
+
+.tablebg{
+    background-color: #222537 !important;
+}
+
+.sidebarcol{
+    color: #F9F9F9 !important;
+}
+
+.welcomeH1{
+    text-align: center ;
+    color: #4f5c7a ;
+    font-size: 96px;
+    font-weight: bold;
+    padding-top: 10%;
+}
+.welcomeH6{
+    text-align: center;
+    color: #4f5c7a ;
+    font-size: 20px;
+    font-weight: 400;
+}
+.welcomeGif{
+    height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: -10%;
+}
+.welcomecl{
+    align-content: center !important;
+}
+
+.navbarlogo{
+    height: 20px;
+    width:auto;
+    padding-right: 50px;
+    margin-top: 20px;
+    padding-bottom: 0%;
+}
+.traininfo{
+    height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*{
+    font-family: 'Poppins', sans-serif; 
+}
+.h-font{
+    font-family: 'Merienda', cursive;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+.custom-bg{
+    background-color: #C70039 !important;
+    border: 1px solid #C70039 !important;
+}
+.custom-bg:hover{
+    background-color: #900C3F !important;
+    border-color: #900C3F !important;
+}
