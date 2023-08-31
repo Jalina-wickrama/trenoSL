@@ -3,7 +3,7 @@ Treno SL Online Reservation  System is a web application crafted using core php 
 
 <hr>
 
-# 1 Dummy Passenger Account
+# Admin Account
 <hr>
 email = hi@orrs.com<br>
 password = admin
