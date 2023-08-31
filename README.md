@@ -1,12 +1,6 @@
 # Treno SL
 Treno SL Online Reservation  System is a web application crafted using core php ,Javascript , HTML5, CSS3 and Bootstrap.<br>
 
-![main screen 1](https://github.com/MartMbithi/OTRS/blob/master/swal.png)
-![main screen 2](https://github.com/MartMbithi/OTRS/blob/master/pass-dashboard.png)
-![main screen 3](https://github.com/MartMbithi/OTRS/blob/master/emp-dashboard.png)
-
-
-
 <hr>
 
 # 1 Dummy Passenger Account
