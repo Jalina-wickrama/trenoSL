@@ -115,7 +115,7 @@ if (isset ($_POST["direct1"]))
                                 <img src="images/black-circle (1).png" alt="" height='10' width='10' style="margin-right: 10px;"> On time </td>
                                 <td> 
                                   <span class = "">
-                                                <a href = "individual-train-tracking.php"> > </a>
+                                                <a href = "gps.php"> > </a>
                                   </span> 
                                 </td>
                                 </tr>

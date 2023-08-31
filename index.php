@@ -136,19 +136,25 @@ $result = mysqli_query($con,$query);
                     
                         <form action="" method="POST">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>Current station</label>
                                         <input type="input" name="current" value="<?php if (isset($_POST['current'])) {$current = $_POST['current'];}  ?>" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>Destination station</label>
                                         <input type="input" name="destination" value="<?php if(isset($_POST['destination'])){ $destination = $_POST['destination']; }?>" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Search Root</label>
+                                        <input type="input" name="route" value="<?php if(isset($_POST['route'])){ $route = $_POST['route']; }?>" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
                                     <div class="form-group">
                                   </br>
                                       <button id="showit" type="submit" class="btn btn-danger" >Search</button>
@@ -175,9 +181,10 @@ $result = mysqli_query($con,$query);
                         <table class="table table-borderd">
                             <thead>
                                 <tr>
-                                <td> Train Route </td>
+                                <td> Train Name </td>
                                 <td> Departure Station </td>
                                 <td> Destination Station </td>
+                                <td>Your Station</td>
                                 <td> Time </td>
                                 <td>Book Train</td>
                                 </tr>
@@ -186,12 +193,13 @@ $result = mysqli_query($con,$query);
                             <!-- current =$current AND destination= $destination -->
                             <?php 
 
-                                if(isset($_POST['current']) && isset($_POST['destination']))
+                                if(isset($_POST['current']) && isset($_POST['destination']) && isset($_POST['route']))
                                 {
                                     $current = $_POST['current'] ;
                                     $destination = $_POST['destination'];
+                                    $route = $_POST['route'];
 
-                                    $query = "SELECT * FROM orrs_train WHERE current ='$current' OR destination ='$destination'";
+                                    $query = "SELECT * FROM orrs_train WHERE current ='$current' OR destination ='$destination' OR route LIKE '%$route%'";
                                     $query_run = mysqli_query($con, $query);
 
                                     if(mysqli_num_rows($query_run) > 0)
@@ -200,9 +208,10 @@ $result = mysqli_query($con,$query);
                                         {
                                             ?>
                                             <tr>
-                                            <td><?php echo $row['route'];?></td>
+                                            <td><?php echo $row['name'];?></td>
                                             <td><?php echo $row['current'];?></td>
                                             <td><?php echo $row['destination'];?></td>
+                                            <td><?php echo $route;?></td>
                                             <td><?php echo $row['time'];?></td>
                                             <td>
                                             <span class = "badge badge-pill badge-outline-danger">
